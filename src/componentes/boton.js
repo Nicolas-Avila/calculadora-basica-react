@@ -1,4 +1,5 @@
 import React from 'react'
+import '../estilos/boton.css'
 
 function Boton(props){
 const esOperador= valor => {
@@ -6,7 +7,7 @@ const esOperador= valor => {
 }
 
     return(
-        <div className={`boton-contenedor ${esOperador(props.children) ? 'operador' : null}`.trim()}>
+        <div className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trim()}>
             {props.children}
         </div>
     )
